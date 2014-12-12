@@ -1,0 +1,7 @@
+benchmark/*
+bin/*
+build.*
+clean.*
+common.gypi
+docs/*
+haywire.gyp
