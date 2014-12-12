@@ -4,9 +4,9 @@
 #include "route_compare_method.h"
 
 #if defined(_WIN32) || defined(_WIN64) 
+	#include "mingw_strtok.h"
     #define strcasecmp _stricmp 
     #define strncasecmp _strnicmp 
-    #define strtok_r strtok_s
 #endif
 
 static char route_key[2048];
