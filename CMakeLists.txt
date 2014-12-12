@@ -1,9 +1,7 @@
 IF(BIICODE)
     include(${CMAKE_HOME_DIRECTORY}/biicode.cmake)
     INIT_BIICODE_BLOCK()
-
     ADD_BIICODE_TARGETS()
-
 ELSE()
 
 cmake_minimum_required(VERSION 2.6)

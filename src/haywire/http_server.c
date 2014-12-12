@@ -1,7 +1,9 @@
-#pragma comment (lib, "libuv.lib")
-#pragma comment (lib, "ws2_32.lib")
-#pragma comment(lib, "psapi.lib")
-#pragma comment(lib, "Iphlpapi.lib")
+#ifndef BIICODE /*Biicode handles deps with cmake*/
+	#pragma comment (lib, "libuv.lib")
+	#pragma comment (lib, "ws2_32.lib")
+	#pragma comment(lib, "psapi.lib")
+	#pragma comment(lib, "Iphlpapi.lib")
+#endif
 
 #ifdef PLATFORM_POSIX
 #include <signal.h>
