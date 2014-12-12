@@ -1,3 +1,11 @@
+IF(BIICODE)
+    include(${CMAKE_HOME_DIRECTORY}/biicode.cmake)
+    INIT_BIICODE_BLOCK()
+
+    ADD_BIICODE_TARGETS()
+
+ELSE()
+
 cmake_minimum_required(VERSION 2.6)
 
 # create_source_group(relativeSourcePath sourceGroupName files)
@@ -114,3 +122,5 @@ target_link_libraries (hello_world ${CMAKE_THREAD_LIBS_INIT}
     ${CMAKE_SOURCE_DIR}/Build/libhaywire_static.a)
 target_link_libraries(hello_world ${CMAKE_THREAD_LIBS_INIT}
     ${CMAKE_SOURCE_DIR}/lib/libuv/.libs/libuv.a)
+
+ENDIF()
